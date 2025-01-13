@@ -7,7 +7,7 @@ import {Links} from "@/app/components/LInks";
 export default function Home() {
   return (
       <Layout>
-        <TransparentWrapper move={true}>
+        <TransparentWrapper>
           <div className="container-row bg-white flex">
             <div className="container">
               <div className="xl:flex gap-8 items-center justify-center w-full">

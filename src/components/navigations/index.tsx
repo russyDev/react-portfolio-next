@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const links = [
   {
@@ -14,10 +15,6 @@ const links = [
     to: '/services',
     text: 'Services',
   },
-  /*  {
-    to: '/portfolio',
-    text: 'Portfolio',
-  },*/
   {
     to: '/contact',
     text: 'Contact',
@@ -25,15 +22,17 @@ const links = [
 ];
 
 export const Navigations = () => {
+  const pathname = usePathname();
+
   return (
     <ul className="block w-full">
       {links.map((link, index) => {
+        const isActive = pathname === link.to;
         return (
           <li key={index}>
             <Link
               href={link.to}
-             /* className={({ isActive }) => `text-base link ${isActive ? 'text-primary' : ''}`}*/
-              className={'text-base link'}
+              className={`text-base link ${isActive ? 'text-primary' : ''}`}
             >
               {link.text}
             </Link>
