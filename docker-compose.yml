@@ -5,7 +5,7 @@ services:
         image: node:20
         stdin_open: true
         ports:
-            - 3005:3000
+            - 3006:3000
         volumes:
             - ./:/var/www/
         command: ["sh", "-c", "cd /var/www && yarn && yarn run build && yarn start"]
