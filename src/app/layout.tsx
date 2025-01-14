@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ruslan Kolibabchuk",
+  title: {
+      template: "Ruslan Kolibabchuk - %s",
+      default: "Ruslan Kolibabchuk",
+  },
   description: "Ruslan Kolibabchuk - Senior Frontend Developer",
 };
 

@@ -1,13 +1,16 @@
-"use client"
 import React from 'react';
 import { Layout } from '@/components/layout';
 import { useGetUserData } from '@/hooks/useGetUserData';
 import { ContactForm } from '@/components/contactForm';
 import Link from "next/link";
+import {Metadata} from "next";
+
+export const metadata:Metadata = {
+    title: "Contact",
+}
 
 const ContactPage = () => {
     const { user } = useGetUserData();
-
     return (
         <Layout>
 

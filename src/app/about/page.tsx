@@ -6,6 +6,11 @@ import { Parameters } from './components/Parameters';
 import { Experience } from './components/Experience';
 import { TransparentWrapper } from '@/components/layout/transparentWrapper';
 import Link from "next/link";
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "About",
+};
 
 const AboutPage = () => {
     const { user } = useGetUserData();

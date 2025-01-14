@@ -3,7 +3,11 @@ import { Layout } from '@/components/layout';
 import { useGetUserData } from '@/hooks/useGetUserData';
 import { ServicesList } from './components/servicesList';
 import Link from "next/link";
+import type { Metadata } from 'next'
 
+export const metadata: Metadata = {
+    title: "Services",
+}
 const ServicesPage = () => {
     const { user } = useGetUserData();
     return (
