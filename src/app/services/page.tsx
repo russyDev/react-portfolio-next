@@ -12,7 +12,7 @@ const ServicesPage = () => {
     const { user } = useGetUserData();
     return (
         <Layout>
-            <div className="flex flex-col grow overflow-scroll">
+            <div className="flex flex-col grow overflow-scroll ">
                 <div className="container-row bg-white flex">
                     <div className="container">
                         <p className="uppercase text-main font-medium mb-5">- Services</p>

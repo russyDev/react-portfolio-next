@@ -1,6 +1,0 @@
-@tailwind components;
-@layer components {
-    .more {
-        @apply block mt-8 text-primaryDark font-bold text-lg;
-    }
-}

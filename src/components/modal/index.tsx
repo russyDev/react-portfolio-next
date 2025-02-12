@@ -43,7 +43,7 @@ export const Modal: FC<Props> = ({ open, children, onClose, title }) => {
   return (
     <>
       {createPortal(
-        <div className="fixed z-1 top-0 left-0 w-full h-full bg-black bg-opacity-60 flex items-center justify-center">
+        <div className="fixed z-1 top-0 left-0 w-full h-full bg-black/60 flex items-center justify-center">
           <div
             className="modal bg-white w-full max-w-4xl max-h-[90%] rounded overflow-auto px-4"
             ref={modalRef}

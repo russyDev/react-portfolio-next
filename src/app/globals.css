@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
   margin: 0;
@@ -12,6 +10,12 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@theme {
+  --color-primary: #a5a6ff;
+  --color-primaryDark: #130f49;
+  --color-main: #55527c;
 }
 
 @layer components {
@@ -35,11 +39,15 @@ code {
   }
 
   .regular-text {
-    @apply text-main text-opacity-80 font-medium text-lg leading-8;
+    @apply text-main/80 font-medium text-lg leading-8;
   }
 
   .input {
-    @apply block w-full rounded mb-2 p-2 text-main placeholder:text-main placeholder:text-opacity-55 text-lg border outline-none;
+    @apply block w-full rounded mb-2 p-2 text-main placeholder:text-main/55 text-lg border outline-none;
+  }
+
+  .more {
+    @apply block mt-8 text-primaryDark font-bold text-lg;
   }
 
   .styled-block {
@@ -70,3 +78,4 @@ code {
     @apply left-[-30px] opacity-90;
   }
 }
+

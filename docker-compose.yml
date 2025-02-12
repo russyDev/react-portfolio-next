@@ -8,5 +8,6 @@ services:
             - 3006:3000
         volumes:
             - ./:/var/www/
-        command: ["sh", "-c", "cd /var/www && yarn && yarn run build && yarn start"]
+        #command: ["sh", "-c", "cd /var/www && yarn && yarn run build && yarn start"]
+        command: ["sh", "-c", "cd /var/www && yarn && yarn run dev"]
         restart: on-failure
