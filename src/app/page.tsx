@@ -12,6 +12,7 @@ export default function Home() {
             <div className="container">
               <div className="xl:flex gap-8 items-center justify-center w-full">
                 <div className="min-h-full w-full">
+                    test
                   <Details />
                   <Links />
                 </div>
