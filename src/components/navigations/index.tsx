@@ -27,7 +27,9 @@ export const Navigations = () => {
   return (
     <ul className="block w-full">
       {links.map((link, index) => {
-        const isActive = pathname === link.to;
+
+        const isActive = pathname === link.to || (pathname !== '/' && link.to !== '/' && pathname.includes(link.to));
+
         return (
           <li key={index}>
             <Link
