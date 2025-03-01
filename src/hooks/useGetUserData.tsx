@@ -10,7 +10,7 @@ export const useGetUserData = () => {
       {
         name: 'Linkedin',
         icon: <LinkedinIcon className="w-full h-full" />,
-        link: 'https://www.linkedin.com/in/ruslan-kolibabchuk-b3341372/',
+        link: 'https://www.linkedin.com/in/ruslan-kolibabchuk/',
       },
       {
         name: 'Facebook',

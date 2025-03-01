@@ -30,10 +30,6 @@ export const SlideMenu: React.FC<Props> = ({
     }
   }, [isOpen]);
 
-  /* const onClickOverlay = () => {
-    onClose();
-  };*/
-
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Node;
