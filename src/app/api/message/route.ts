@@ -4,6 +4,7 @@ export const POST = async (request: Request) => {
     try {
         const data = await request.json();
 
+        console.log('Forwarding message data:', data);
         const response = await fetch('http://185.69.152.124:3008/send-email', {
             method: 'POST',
             headers: {
