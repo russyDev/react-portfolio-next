@@ -6,7 +6,15 @@ export const POST = async (request: Request) => {
 
         console.log('Forwarding message data:', data);
 
-        return NextResponse.json({});
+        const response = await fetch('http://185.69.152.124:3008/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        });
+        const respData = await response.json();
+        return NextResponse.json(respData);
     } catch(e) {
         console.error('Message API error:', e);
         return new Response('Error', { status: 500 });
