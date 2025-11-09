@@ -14,7 +14,7 @@ type ResponseType = {
 export const useSendEmail = () => {
   const sendEmail = async (data: SendEmailPayload): Promise<ResponseType> => {
     try {
-      const response = await fetch('https://www.ruslan-dev.com/api/message/', {
+      const response = await fetch('/api/message/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

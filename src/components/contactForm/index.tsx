@@ -1,6 +1,6 @@
 "use client"
 import React, { ChangeEvent } from 'react';
-import { useSendEmail } from '@/api/contact';
+import { useSendEmail } from '@/hooks/contact';
 import { Formik, useFormikContext } from "formik";
 import { object, string } from "yup";
 import {QueryClientProvider} from "@tanstack/react-query";
