@@ -305,7 +305,7 @@ export const LayoutTop: React.FC = () => {
 
                     {/* Copyright */}
                     <div className="w-full mt-auto pt-6 border-t border-gray-200 dark:border-gray-700">
-                        <p className="text-center text-xs text-[#767676] dark:text-gray-400 leading-relaxed mb-1">Copyright © 2025 Ruslan Kolibabchuk.</p>
+                        <p className="text-center text-xs text-[#767676] dark:text-gray-400 leading-relaxed mb-1">Copyright © {new Date().getFullYear()} Ruslan Kolibabchuk.</p>
                         <p className="text-center text-xs text-[#767676] dark:text-gray-400 leading-relaxed">All rights reserved.</p>
                     </div>
                 </div>
