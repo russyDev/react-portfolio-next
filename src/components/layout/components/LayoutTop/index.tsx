@@ -7,6 +7,7 @@ import {SlideMenu} from "@/components/slideMenu";
 import { MenuIcon, CloseIcon } from '../../../icons';
 import { ProgressBar } from './ProgressBar';
 import { Navigations } from "@/components/navigations";
+import { ThemeToggle } from "@/components/themeToggle";
 
 const STORAGE_KEY = 'skillsExpanded';
 
@@ -209,6 +210,11 @@ export const LayoutTop: React.FC = () => {
                                 </div>
                             </Link>
                         ))}
+                    </div>
+
+                    {/* Theme Toggle */}
+                    <div className="w-full flex items-center justify-center mb-6">
+                        <ThemeToggle />
                     </div>
 
                     {/* Navigation */}
