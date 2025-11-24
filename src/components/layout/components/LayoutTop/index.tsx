@@ -152,6 +152,7 @@ export const LayoutTop: React.FC = () => {
                     <Link 
                         href="/CV-Kolibabchuk.pdf" 
                         download
+                        prefetch={false}
                         className="w-full bg-[#FFB400] text-white font-bold py-2.5 px-5 rounded-sm flex items-center justify-center gap-2 hover:bg-[#FFA000] transition-colors shadow-md text-xs uppercase tracking-wider cursor-pointer"
                     >
                         <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -294,6 +295,7 @@ export const LayoutTop: React.FC = () => {
                         <Link 
                             href="/CV-Kolibabchuk.pdf" 
                             download
+                            prefetch={false}
                             className="w-full bg-[#FFB400] text-white font-bold py-2.5 px-5 rounded-sm flex items-center justify-center gap-2 hover:bg-[#FFA000] transition-colors shadow-md text-xs uppercase tracking-wider cursor-pointer"
                         >
                             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
