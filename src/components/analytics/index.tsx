@@ -3,7 +3,7 @@
 
 import Script from "next/script";
 
-export default function Analytics() {
+export default function AnalyticsG() {
     const code = 'G-Q86M1RLJRQ';
     return (
         <>
