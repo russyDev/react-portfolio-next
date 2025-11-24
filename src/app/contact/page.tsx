@@ -50,7 +50,7 @@ const ContactPage = () => {
 
             <div className="flex flex-col grow overflow-scroll">
                 <div className="w-full">
-                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm dark:shadow-gray-900/50 p-8 md:p-12 lg:p-16 xl:p-20 mx-5 lg:mx-10 my-5 lg:my-10">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm dark:shadow-gray-900/50 p-8 md:p-12 lg:p-16 xl:p-20 mx-5 lg:mx-10 mb-5 lg:mb-6 mt-5 lg:mt-10">
                         <div className="xl:flex xl:items-center gap-8 lg:gap-12 xl:gap-40">
                             <div className="mb-8 xl:w-1/2 xl:mb-0">
                                 <p className="text-main dark:text-gray-400 uppercase font-semibold text-base mb-6">- Let&#39;s connect</p>

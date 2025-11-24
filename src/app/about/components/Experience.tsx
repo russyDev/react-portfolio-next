@@ -11,7 +11,7 @@ export const Experience = () => {
   return (
     <section className="w-full">
       {/* Header Section */}
-      <div className="py-8 lg:py-10 px-5 lg:px-10 mx-5 lg:mx-10">
+      <div className="py-8 lg:py-10">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2B2B2B] dark:text-white mb-4">
             Experience
@@ -25,7 +25,7 @@ export const Experience = () => {
       </div>
 
       {/* Content Section */}
-      <div className="w-full px-5 lg:px-10">
+      <div className="w-full">
         <div className={`grid grid-cols-1 xl:grid-cols-2 gap-10`}>
         {experiences.map((experience, index) => (
           <div
