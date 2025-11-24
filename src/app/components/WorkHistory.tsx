@@ -26,7 +26,7 @@ export const WorkHistory = () => {
 
       {/* Content Section with White Background */}
       <div className="bg-white dark:bg-gray-800 px-5 lg:px-10 pb-12 lg:pb-16 mx-5 lg:mx-10 rounded-lg shadow-sm dark:shadow-gray-900/50">
-        <div className="max-w-7xl mx-auto pt-8 lg:pt-12">
+        <div className="pt-8 lg:pt-12">
           <div className="space-y-8 lg:space-y-12">
             {workHistory.map((experience, index) => (
               <div
@@ -36,7 +36,7 @@ export const WorkHistory = () => {
                 }`}
               >
                 {/* Left Column - Job Title, Company, and Date */}
-                <div className="lg:w-1/3 flex-shrink-0">
+                <div className="lg:w-1/4 flex-shrink-0">
                   <h3 className="text-xl lg:text-2xl font-bold text-[#2B2B2B] dark:text-white mb-3">
                     {experience.position}
                   </h3>
@@ -51,7 +51,7 @@ export const WorkHistory = () => {
                 </div>
 
                 {/* Right Column - Certificate Title and Description */}
-                <div className="lg:w-2/3">
+                <div className="lg:w-3/4">
                   <h4 className="text-lg lg:text-xl font-bold text-[#2B2B2B] dark:text-white mb-3">
                     Certificate Of Web Training
                   </h4>

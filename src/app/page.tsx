@@ -54,11 +54,11 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="pt-8 md:pt-12 lg:pt-16 xl:pt-20 px-8 md:px-12 lg:px-16 xl:px-20 mx-5 lg:mx-10 mb-5 lg:mb-6">
+            <div className="pt-8 md:pt-12 lg:pt-16 xl:pt-20 mx-5 lg:mx-10 mb-5 lg:mb-6">
               <MyServices />
             </div>
 
-            <div className="mb-5 lg:mb-6 mt-0">
+            <div className="mb-5 lg:mb-6">
               <WorkHistory />
             </div>
           </div>

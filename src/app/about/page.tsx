@@ -70,7 +70,7 @@ const AboutPage = () => {
                         </div>
                         <Parameters />
                     </div>
-                    <div className="p-8 md:p-12 lg:p-16 xl:p-20 mx-5 lg:mx-10 mb-5 lg:mb-6">
+                    <div className="mx-5 lg:mx-10 mb-5 lg:mb-6">
                         <Experience />
                     </div>
                 </div>
