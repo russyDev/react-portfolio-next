@@ -52,9 +52,13 @@ export const WorkHistory = () => {
 
                 {/* Right Column - Description */}
                 <div className="lg:w-3/4">
-                  <p className="text-sm md:text-base text-[#767676] dark:text-gray-300 leading-relaxed">
-                    {experience.description[0]}
-                  </p>
+                  <div className="space-y-4">
+                    {experience.description.slice(0, 2).map((paragraph, paraIndex) => (
+                      <p key={paraIndex} className="text-sm md:text-base text-[#767676] dark:text-gray-300 leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
