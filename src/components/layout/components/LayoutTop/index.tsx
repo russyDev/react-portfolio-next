@@ -168,7 +168,7 @@ export const LayoutTop: React.FC = () => {
                 </div>
             </div>
 
-            <div className="md:hidden flex items-center justify-between gap-5 w-full px-5 py-5 sticky top-0 bg-white dark:bg-gray-800 z-2">
+            <div className="md:hidden flex items-center justify-between gap-5 w-full px-5 py-5 sticky top-0 bg-white dark:bg-gray-800 z-20">
                 <div className="bg-white dark:bg-gray-800 flex items-center px-4 justify-between flex-none">
                     <Link href="/" className="font-bold text-primary dark:text-[#FFB400] text-2xl">
                         Ruslan K.
