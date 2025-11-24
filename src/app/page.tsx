@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ruslan Kolibabchuk - Senior Frontend Developer Portfolio",
     description: "Senior Frontend Developer with 12+ years of experience. Specializing in React, Next.js, TypeScript, and full-stack development. Available for freelance projects.",
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com',
     type: "website",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: ["/user.png"],
   },
   alternates: {
-    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com'}/`,
+    canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com'}/`,
   },
 };
 

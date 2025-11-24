@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Contact Ruslan Kolibabchuk - Senior Frontend Developer",
         description: "Get in touch for freelance projects, consulting, and new opportunities. Available 24/7. Based in Ukraine.",
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com'}/contact`,
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com'}/contact`,
         type: "website",
         images: [
             {
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         images: ["/user.png"],
     },
     alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com'}/contact`,
+        canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com'}/contact`,
     },
 };
 

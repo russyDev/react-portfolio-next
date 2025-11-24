@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com'),
   title: {
       template: "%s | Ruslan Kolibabchuk - Senior Frontend Developer",
       default: "Ruslan Kolibabchuk - Senior Frontend Developer | Portfolio",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com',
     siteName: "Ruslan Kolibabchuk Portfolio",
     title: "Ruslan Kolibabchuk - Senior Frontend Developer",
     description: "Senior Frontend Developer with 12+ years of experience. Specializing in React, Next.js, TypeScript, and full-stack development.",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     images: ["/user.png"],
   },
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com',
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com',
   },
   category: "Portfolio",
 };

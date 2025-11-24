@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Web Development Services - Ruslan Kolibabchuk",
         description: "Professional web development services including Frontend Development (React, Next.js), Backend Development, Full Stack Solutions, Testing & QA, and Technical Consulting.",
-        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com'}/services`,
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com'}/services`,
         type: "website",
         images: [
             {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         images: ["/user.png"],
     },
     alternates: {
-        canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com'}/services`,
+        canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslan-dev.com'}/services`,
     },
 };
 
