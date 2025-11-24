@@ -50,11 +50,8 @@ export const WorkHistory = () => {
                   </div>
                 </div>
 
-                {/* Right Column - Certificate Title and Description */}
+                {/* Right Column - Description */}
                 <div className="lg:w-3/4">
-                  <h4 className="text-lg lg:text-xl font-bold text-[#2B2B2B] dark:text-white mb-3">
-                    Certificate Of Web Training
-                  </h4>
                   <p className="text-sm md:text-base text-[#767676] dark:text-gray-300 leading-relaxed">
                     {experience.description[0]}
                   </p>
