@@ -59,7 +59,7 @@ export const ContactFormComponent = () => {
           />
           {isMessageSent && (
             <div className="absolute">
-              <p className="mt-4 text-green-600">
+              <p className="mt-4 text-green-600 dark:text-green-400">
                 Thank you for your message! I will get back to you as soon as possible.
               </p>
             </div>
@@ -95,7 +95,7 @@ const FormFields = ({ serverErrors, onChangeValues }: PropsFields) => {
           value={values.name}
           onChange={onChangeHandler}
         />
-        {errors.name && <p className="text-red-600 absolute left-0">{errors.name}</p>}
+        {errors.name && <p className="text-red-600 dark:text-red-400 absolute left-0">{errors.name}</p>}
       </div>
       <div className="relative pb-8">
         <input
@@ -106,7 +106,7 @@ const FormFields = ({ serverErrors, onChangeValues }: PropsFields) => {
           value={values.email}
           onChange={onChangeHandler}
         />
-        {errors.email && <p className="text-red-600 absolute left-0">{errors.email}</p>}
+        {errors.email && <p className="text-red-600 dark:text-red-400 absolute left-0">{errors.email}</p>}
       </div>
       <div className="relative pb-8 mb-8">
         <textarea
@@ -116,7 +116,7 @@ const FormFields = ({ serverErrors, onChangeValues }: PropsFields) => {
           value={values.message}
           onChange={onChangeHandler}
         />
-        {errors.message && <p className="text-red-600 absolute left-0">{errors.message}</p>}
+        {errors.message && <p className="text-red-600 dark:text-red-400 absolute left-0">{errors.message}</p>}
       </div>
 
       <button
@@ -129,7 +129,7 @@ const FormFields = ({ serverErrors, onChangeValues }: PropsFields) => {
       </button>
       {serverErrors && (
         <div className="absolute">
-          <p className="mt-4 text-red-600">{serverErrors.join(', ')}</p>
+          <p className="mt-4 text-red-600 dark:text-red-400">{serverErrors.join(', ')}</p>
         </div>
       )}
     </>

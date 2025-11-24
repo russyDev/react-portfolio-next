@@ -5,9 +5,43 @@ import { ContactForm } from '@/components/contactForm';
 import Link from "next/link";
 import {Metadata} from "next";
 
-export const metadata:Metadata = {
+export const metadata: Metadata = {
     title: "Contact",
-}
+    description: "Get in touch with Ruslan Kolibabchuk - Senior Frontend Developer. Available for freelance projects, consulting, and new opportunities. Contact via email or phone. Based in Ukraine, available 24/7.",
+    keywords: [
+        "Contact Ruslan Kolibabchuk",
+        "Hire Frontend Developer",
+        "React Developer Contact",
+        "Freelance Developer",
+        "Web Developer Contact",
+        "Hire React Developer",
+        "Ukraine Developer Contact",
+        "Frontend Developer Available",
+    ],
+    openGraph: {
+        title: "Contact Ruslan Kolibabchuk - Senior Frontend Developer",
+        description: "Get in touch for freelance projects, consulting, and new opportunities. Available 24/7. Based in Ukraine.",
+        url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com'}/contact`,
+        type: "website",
+        images: [
+            {
+                url: "/user.png",
+                width: 1200,
+                height: 630,
+                alt: "Contact Ruslan Kolibabchuk",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact Ruslan Kolibabchuk - Senior Frontend Developer",
+        description: "Get in touch for freelance projects, consulting, and new opportunities. Available 24/7.",
+        images: ["/user.png"],
+    },
+    alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://ruslankolibabchuk.com'}/contact`,
+    },
+};
 
 const ContactPage = () => {
     const { user } = useGetUserData();
@@ -15,13 +49,13 @@ const ContactPage = () => {
         <Layout>
 
             <div className="flex flex-col grow overflow-scroll">
-                <div className="container-row bg-sky-50 flex">
-                    <div>
-                        <div className="xl:flex gap-40 container lg:pt-28">
-                            <div className="mb-3 xl:w-1/2 xl:mb-0">
-                                <p className="text-main uppercase font-semibold text-base mb-6">- Let&#39;s connect</p>
-                                <p className="text-4xl font-bold text-primaryDark mb-2">Get in touch</p>
-                                <p className="text-base font-bold text-main">
+                <div className="w-full">
+                    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm dark:shadow-gray-900/50 p-8 md:p-12 lg:p-16 xl:p-20 mx-5 lg:mx-10 my-5 lg:my-10">
+                        <div className="xl:flex xl:items-center gap-8 lg:gap-12 xl:gap-40">
+                            <div className="mb-8 xl:w-1/2 xl:mb-0">
+                                <p className="text-main dark:text-gray-400 uppercase font-semibold text-base mb-6">- Let&#39;s connect</p>
+                                <p className="text-4xl font-bold text-primaryDark dark:text-white mb-2">Get in touch</p>
+                                <p className="text-base font-bold text-main dark:text-gray-300">
                                     I&#39;m currently available to take on new projects, so feel free to send me a message
                                     about anything that you want to run past me. You can contact anytime at 24/7
                                 </p>
@@ -29,7 +63,7 @@ const ContactPage = () => {
                                 <ul className="pl-0 mt-10">
                                     <li>
                                         <Link
-                                            className="block text-xm text-primaryDark font-bold mb-2 underline"
+                                            className="block text-xm text-primaryDark dark:text-white font-bold mb-2 underline hover:text-[#FFB400] dark:hover:text-[#FFB400]"
                                             href={`tel:${user.phone}`}
                                         >
                                             {user.phone}
@@ -37,30 +71,34 @@ const ContactPage = () => {
                                     </li>
                                     <li>
                                         <Link
-                                            className="block text-base text-primaryDark font-bold mb-3 underline"
+                                            className="block text-base text-primaryDark dark:text-white font-bold mb-3 underline hover:text-[#FFB400] dark:hover:text-[#FFB400]"
                                             href={`mailto:${user.email}`}
                                         >
                                             {user.email}
                                         </Link>
                                     </li>
                                 </ul>
+
+                                {/* Google Map */}
+                                <div className="mt-10">
+                                    <div className="w-full h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-md">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325515.6816598763!2d30.582005!3d50.4021369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2sKyiv%2C%20Ukraine!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                                            width="100%"
+                                            height="100%"
+                                            style={{ border: 0 }}
+                                            allowFullScreen
+                                            loading="lazy"
+                                            referrerPolicy="no-referrer-when-downgrade"
+                                            title="Kyiv, Ukraine Location"
+                                        />
+                                    </div>
+                                </div>
                             </div>
                             <div className="xl:w-1/2">
                                 <ContactForm />
                             </div>
                         </div>
-
-                        {/* <div className="mt-16">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7875370.431280723!2d30.899850718887556!3d48.6640209070204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d1d9c154700e8f%3A0x1068488f64010!2z0KPQutGA0LDRl9C90LA!5e1!3m2!1suk!2sua!4v1734689470294!5m2!1suk!2sua"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>*/}
                     </div>
                 </div>
             </div>

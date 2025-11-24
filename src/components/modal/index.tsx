@@ -45,13 +45,13 @@ export const Modal: FC<Props> = ({ open, children, onClose, title }) => {
       {createPortal(
         <div className="fixed z-1 top-0 left-0 w-full h-full bg-black/60 flex items-center justify-center">
           <div
-            className="modal bg-white w-full max-w-4xl max-h-[90%] rounded overflow-auto px-4"
+            className="modal bg-white dark:bg-gray-800 w-full max-w-4xl max-h-[90%] rounded overflow-auto px-4"
             ref={modalRef}
           >
-            <div className="modal-header px-5 flex justify-between bg-white sticky top-0 py-4">
-              <span className="modal-title text-primaryDark text-base font-semibold">{title}</span>
+            <div className="modal-header px-5 flex justify-between bg-white dark:bg-gray-800 sticky top-0 py-4">
+              <span className="modal-title text-primaryDark dark:text-white text-base font-semibold">{title}</span>
               <span className="close" onClick={onClose}>
-                <CloseIcon className="cursor-pointer fill-primaryDark" onClick={onCloseHandler} />
+                <CloseIcon className="cursor-pointer fill-primaryDark dark:fill-white" onClick={onCloseHandler} />
               </span>
             </div>
             <div className="modal-body py-2 px-5">{children}</div>

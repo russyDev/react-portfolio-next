@@ -34,7 +34,11 @@ export const Navigations = () => {
           <li key={index}>
             <Link
               href={link.to}
-              className={`text-base link ${isActive ? 'text-primary' : ''}`}
+              className={`text-sm block py-2.5 text-center transition duration-300 border-b border-transparent ${
+                isActive 
+                  ? 'text-[#FFB400] font-bold border-[#FFB400]' 
+                  : 'text-[#767676] dark:text-gray-400 hover:text-[#2B2B2B] dark:hover:text-white'
+              }`}
             >
               {link.text}
             </Link>

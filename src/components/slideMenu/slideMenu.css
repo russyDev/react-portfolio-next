@@ -8,6 +8,14 @@
   z-index: 300;
   background: #F5F9FC;
 
+  @media (prefers-color-scheme: dark) {
+    background: #1f2937;
+  }
+
+  .dark & {
+    background: #1f2937;
+  }
+
   &.rightSide {
     right: -420px;
     transition: right 0.3s ease;
