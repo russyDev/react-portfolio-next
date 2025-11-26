@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home",
-  description: "Welcome to Ruslan Kolibabchuk's portfolio. Senior Frontend Developer with 12+ years of experience in React, Next.js, TypeScript, and full-stack development. View my work, services, and get in touch for your next project.",
+  description: "Welcome to Ruslan Kolibabchuk's portfolio. Senior Frontend Developer with 14+ years of experience in React, Next.js, TypeScript, and full-stack development. View my work, services, and get in touch for your next project.",
   keywords: [
     "Ruslan Kolibabchuk",
     "Frontend Developer Portfolio",
