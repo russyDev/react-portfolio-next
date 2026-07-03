@@ -32,12 +32,6 @@ export const OwnDescription = () => {
             {user.email}
           </Link>
         </div>
-        <div>
-          <div className="uppercase underline text-main dark:text-gray-400 font-medium text-lg">Phone</div>
-          <Link href="" className="text-primaryDark dark:text-white font-semibold text-lg hover:text-orange-400">
-            {user.phone}
-          </Link>
-        </div>
       </div>
     </>
   );

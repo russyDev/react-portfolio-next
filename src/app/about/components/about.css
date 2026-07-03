@@ -1,0 +1,256 @@
+.about-header {
+  padding: 72px var(--pad-x) 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-lead {
+  max-width: 760px;
+}
+
+.about-grid {
+  animation: site-rise 0.7s 0.24s both;
+  padding: 24px var(--pad-x) 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.2fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.about-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-card-deep {
+  background: var(--deep);
+  color: var(--deepink);
+  border-radius: 20px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: background 0.35s;
+}
+
+.about-card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: var(--font-instrument), sans-serif;
+  font-size: 15px;
+}
+
+.about-info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.about-info-label {
+  color: var(--muted);
+}
+
+.about-info-value {
+  font-weight: 600;
+  text-align: right;
+}
+
+.about-info-available {
+  font-weight: 600;
+  color: #3E7C4F;
+}
+
+.about-info-link {
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+  text-align: right;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+
+.about-info-link:hover {
+  color: var(--accent);
+}
+
+.about-cv-btn {
+  margin-top: 8px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #FAF6F0;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.about-cv-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(232, 93, 47, 0.35);
+}
+
+.about-bar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about-bar-head {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-instrument), sans-serif;
+  font-size: 15px;
+}
+
+.about-bar-name {
+  font-weight: 600;
+}
+
+.about-bar-pct {
+  color: var(--muted);
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 13px;
+}
+
+.about-card-deep .about-bar-pct {
+  color: var(--deepmuted);
+}
+
+.about-bar-track {
+  height: 8px;
+  border-radius: 99px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.about-card-deep .about-bar-track {
+  background: rgba(250, 246, 240, 0.14);
+}
+
+.about-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  background: var(--accent);
+  transition: width 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.about-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-tag {
+  padding: 7px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-family: var(--font-instrument), sans-serif;
+  font-size: 13.5px;
+  color: var(--muted);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.about-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.about-timeline {
+  padding: 56px var(--pad-x);
+  background: var(--bg2);
+  border-top: 1px solid var(--line);
+  transition: background 0.35s;
+}
+
+.about-timeline .site-section-title {
+  margin-bottom: 36px;
+}
+
+.about-timeline-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-job {
+  display: grid;
+  grid-template-columns: 170px 260px 1fr;
+  gap: 24px;
+  padding: 24px 12px;
+  border-top: 1px solid var(--line);
+  align-items: baseline;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.about-job:hover {
+  background: var(--card);
+}
+
+.about-job-years {
+  font-family: var(--font-jetbrains), monospace;
+  font-size: 13px;
+  color: var(--accent);
+}
+
+.about-job-company {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.about-job-role {
+  font-size: 14px;
+  color: var(--muted);
+  font-family: var(--font-instrument), sans-serif;
+  margin-top: 2px;
+}
+
+.about-job-blurb {
+  font-size: 15px;
+  color: var(--muted);
+  font-family: var(--font-instrument), sans-serif;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-card-deep {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card-deep {
+    grid-column: auto;
+  }
+
+  .about-job {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

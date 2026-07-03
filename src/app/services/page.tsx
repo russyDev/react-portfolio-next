@@ -1,9 +1,6 @@
 import React from 'react';
-import { useGetUserData } from '@/hooks/useGetUserData';
-import { ServicesList } from './components/servicesList';
-import Link from "next/link";
+import { ServicesContent } from './components/ServicesContent';
 import type { Metadata } from 'next'
-import {Layout} from "@/components/layout";
 
 export const metadata: Metadata = {
     title: "Services",
@@ -48,27 +45,7 @@ export const metadata: Metadata = {
 };
 
 const ServicesPage = () => {
-    const { user } = useGetUserData();
-    return (
-        <Layout>
-            <div className="w-full">
-                <div className="py-8 md:py-12 lg:py-16 xl:py-20 mx-5 lg:mx-10 mb-5 lg:mb-6 mt-5 lg:mt-10">
-                    <p className="uppercase text-main dark:text-gray-400 font-medium mb-5">- Services</p>
-                    <div className="flex-col lg:flex-row flex justify-between items-center gap-1 mb-10">
-                        <h1 className="text-4xl font-extrabold text-primaryDark dark:text-white">My Services</h1>
-                        <Link
-                            href={`mailto:${user.email}`}
-                            className="text-primaryDark dark:text-white font-bold text-base link hover:text-orange-400 dark:hover:text-orange-400 underline"
-                        >
-                            {user.email}
-                        </Link>
-                    </div>
-
-                    <ServicesList />
-                </div>
-            </div>
-        </Layout>
-    );
+    return <ServicesContent />;
 };
 
 export default ServicesPage;

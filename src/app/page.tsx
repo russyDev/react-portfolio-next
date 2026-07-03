@@ -1,8 +1,5 @@
 import React from "react";
-import {Details} from "@/app/components/Details";
-import {MyServices} from "@/app/components/MyServices";
-import {WorkHistory} from "@/app/components/WorkHistory";
-import {Layout} from "@/components/layout";
+import {HomeContent} from "@/app/components/HomeContent";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -45,23 +42,5 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  return (
-      <Layout>
-          <div className="w-full">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm dark:shadow-gray-900/50 p-8 md:p-12 lg:p-16 xl:p-20 relative overflow-hidden mx-5 lg:mx-10 mb-5 lg:mb-6 mt-5 lg:mt-10">
-              <div className="flex flex-col items-start justify-center w-full py-8 lg:py-12 relative z-10">
-                <Details />
-              </div>
-            </div>
-            
-            <div className="pt-8 md:pt-12 lg:pt-16 xl:pt-20 mx-5 lg:mx-10 mb-5 lg:mb-6">
-              <MyServices />
-            </div>
-
-            <div className="mb-5 lg:mb-6">
-              <WorkHistory />
-            </div>
-          </div>
-      </Layout>
-  );
+  return <HomeContent />;
 }
