@@ -36,6 +36,7 @@
 }
 
 .home-title {
+  font-family: var(--font-bricolage), sans-serif;
   animation: site-rise 0.6s 0.08s both;
   font-size: clamp(44px, 6.5vw, 84px);
   line-height: 1;
@@ -152,6 +153,7 @@
 }
 
 .home-terminal-caption {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: 22px;
   font-weight: 700;
 }
@@ -171,6 +173,7 @@
 }
 
 .home-stat-number {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: 44px;
   font-weight: 800;
   color: var(--accent);
@@ -199,6 +202,7 @@
 }
 
 .home-stack-title {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.2;
@@ -260,6 +264,7 @@
 }
 
 .home-service-title {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
@@ -312,6 +317,7 @@
 }
 
 .home-job-company {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -336,6 +342,7 @@
 }
 
 .home-footer-title {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: clamp(36px, 5vw, 54px);
   font-weight: 800;
   letter-spacing: -0.03em;

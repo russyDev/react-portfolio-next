@@ -39,6 +39,7 @@
 }
 
 .about-card-title {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
@@ -148,6 +149,7 @@
 }
 
 .about-subtitle {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: 20px;
   font-weight: 700;
   margin-top: 6px;
@@ -212,6 +214,7 @@
 }
 
 .about-job-company {
+  font-family: var(--font-bricolage), sans-serif;
   font-size: 19px;
   font-weight: 700;
 }
